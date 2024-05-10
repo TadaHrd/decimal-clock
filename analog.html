@@ -125,5 +125,10 @@
 
     <script src="js/conversions.js"></script>
     <script src="js/analogClock.js"></script>
+    <script>
+        if (location.hash == "#noLink") {
+            document.querySelector("#bottomText").style.display = "none";
+        }
+    </script>
 </body>
 </html>
