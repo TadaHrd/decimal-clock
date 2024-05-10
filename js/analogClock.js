@@ -13,5 +13,5 @@ function setTime() {
 
     secondsHand.setAttribute("transform", `rotate(${time.secondsMilliseconds * 3.6 - 61 /* default rotation of hand */} 50 50)`);
     minutesHand.setAttribute("transform", `rotate(${time.minutes * 3.6 - 34 /* default rotation of hand */} 50 50)`);
-    hoursHand.setAttribute("transform", `rotate(${time.hours * 45 - 14 /* default rotation of hand */} 50 50)`);
+    hoursHand.setAttribute("transform", `rotate(${(time.hours + time.minutes / 60) * 45 - 14 /* default rotation of hand */} 50 50)`);
 }
