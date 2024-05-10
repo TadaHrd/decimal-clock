@@ -13,6 +13,7 @@ function normalSecondsToDecimalTime(allDaySeconds) {
 
     return {
         milliseconds: dayDecimalMilliseconds,
+        secondsMilliseconds: dayDecimalSeconds + dayDecimalMilliseconds / 1000,
         seconds: dayDecimalSeconds,
         minutes: dayDecimalMinutes,
         hours: dayDecimalHours,
@@ -35,6 +36,7 @@ function decimalSecondsToNormalTime(allDecimalDaySeconds) {
 
     return {
         milliseconds: dayMilliseconds,
+        secondsMilliseconds: daySeconds + dayMilliseconds / 1000,
         seconds: daySeconds,
         minutes: dayMinutes,
         hours: dayHours,

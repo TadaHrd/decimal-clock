@@ -3,7 +3,7 @@ let date = new Date;
 let timeDisplay = document.querySelector("#time");
 let timeDisplayMilliseconds = document.querySelector("#timeMilliseconds");
 
-setInterval(setTime, 1/20);
+setInterval(setTime, 25);
 
 function setTime() {
     date = new Date;

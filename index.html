@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="light dark">
 
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <title>Decimal Clock</title>
 </head>
@@ -18,9 +18,14 @@
         <div id="timeDiv">
             <p class="time" id="time">4:00:00</p><p class="time" id="timeMilliseconds">.000</p>
         </div>
+
+        <a id="bottomText" href="analog.html">
+            <img src="assets/favicon.png">&nbsp;
+            Switch to analog clock
+        </a>
     </main>
 
-    <script src="conversions.js"></script>
-    <script src="index.js"></script>
+    <script src="js/conversions.js"></script>
+    <script src="js/digitalClock.js"></script>
 </body>
 </html>
