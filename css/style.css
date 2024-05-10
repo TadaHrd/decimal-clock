@@ -10,9 +10,6 @@ main {
 
     display: grid;
     grid-template-rows: 1fr 64px;
-
-    justify-content: space-between;
-    align-items: center;
 }
 
 #timeDiv {
@@ -27,10 +24,13 @@ main {
 #timeDiv svg {
     max-width: 90vw;
     max-height: 90vh;
+
+    min-height: 0;
 }
 
 #bottomText {
-    margin: 0 0 10px 10px;
+    height: 64px;
+    margin-left: 10px;
 
     display: flex;
 
